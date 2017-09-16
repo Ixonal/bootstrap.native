@@ -1562,18 +1562,18 @@
       triggerHide = function() {
         removeClass(activeContent,active);
         addClass(nextContent,active);
-        setTimeout(function() {
-          addClass(nextContent,inClass);
+        //setTimeout(function() {
           nextContent[offsetHeight];
           if (tabsContentContainer) addClass(tabsContentContainer,collapsing);
           (function() {
             bootstrapCustomEvent.call(next, showEvent, component, activeTab);
             (function() {
               if(tabsContentContainer) tabsContentContainer[style][height] = nextContent[scrollHeight] + 'px'; // height animation
+              addClass(nextContent,inClass);
               bootstrapCustomEvent.call(activeTab, hiddenEvent, component, next);
             }());
           }());
-        },20);
+        //},20);
       };
   
     if (!tabs) return; // invalidate 
